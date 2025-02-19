@@ -113,5 +113,5 @@ iface = gr.Interface(
 if __name__ == "__main__":
     print("[INFO] Gradio 인터페이스 실행 준비 완료...")
     print("[INFO] Gradio 인터페이스 실행 중... (웹 브라우저를 열고 GUI를 시작합니다.)")
-    iface.launch() # Gradio GUI 실행
+    iface.launch(server_port=8080, inbrowser=False)
     print("[INFO] Gradio 인터페이스 실행 종료.")
